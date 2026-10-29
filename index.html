@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Trimite un mesaj deputaților despre accesul la psiholog de la 16 ani.">
+<title>Spune-le deputaților | Sens Pozitiv</title>
+<style>
+:root{--ink:#20212b;--muted:#626575;--paper:#f7f5f0;--card:#fff;--accent:#5b3fc4;--accent2:#e7e0ff;--line:#e4e1eb}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+main{max-width:780px;margin:0 auto;padding:24px 16px 56px}.brand{font-size:.82rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:12px 0 26px}
+.hero{background:var(--accent);color:white;padding:clamp(24px,5vw,44px);border-radius:24px}.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;opacity:.9}
+h1{font-size:clamp(2rem,7vw,3.5rem);line-height:1.04;letter-spacing:-.04em;margin:12px 0 16px}.hero p{font-size:1.08rem;max-width:58ch;margin:0}
+section{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;margin-top:16px}
+h2{font-size:1.25rem;margin:0 0 10px;letter-spacing:-.02em}p{margin:8px 0}.muted{color:var(--muted);font-size:.92rem}
+label{display:block;font-weight:700;margin:14px 0 6px}input[type=text],input[type=email]{width:100%;border:1px solid #c9c5d4;border-radius:10px;padding:13px 14px;font:inherit;background:white;color:var(--ink)}
+textarea{width:100%;min-height:220px;border:1px solid #c9c5d4;border-radius:10px;padding:13px 14px;font:inherit;line-height:1.5;resize:vertical}
+.check{display:flex;gap:10px;align-items:flex-start;font-weight:500;margin-top:16px}.check input{margin-top:5px;flex-shrink:0}
+button,.button{appearance:none;border:0;border-radius:999px;padding:14px 18px;font:inherit;font-weight:750;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;min-height:48px}
+.primary{background:var(--accent);color:white;width:100%;margin-top:16px}.secondary{background:var(--accent2);color:var(--ink);width:100%;margin-top:10px}.actions{display:grid;grid-template-columns:1fr;gap:0}
+.notice{background:#f5f1ff;border-left:4px solid var(--accent);padding:12px 14px;border-radius:8px;font-size:.92rem}
+footer{font-size:.82rem;color:var(--muted);padding:22px 4px 0}
+a{color:var(--accent)}.small{font-size:.82rem}
+@media(min-width:560px){.actions{grid-template-columns:1fr 1fr;gap:10px}.actions button,.actions a{margin-top:10px}.primary{margin-top:16px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Sens Pozitiv · Acțiune civică</div>
+  <header class="hero">
+    <div class="eyebrow">Vocea ta contează</div>
+    <h1>Acces la psiholog de la 16 ani</h1>
+    <p>Le putem cere deputaților să ia în serios accesul tinerilor la servicii de sănătate mintală. Citește mesajul, completează-ți datele și trimite-l dacă ești de acord cu el.</p>
+  </header>
+
+  <section>
+    <h2>Ce le cerem deputaților?</h2>
+    <p><strong>[ÎNLOCUIEȘTE CU REZUMATUL VERIFICAT AL PROPUNERII ȘI AL VOTULUI]</strong></p>
+    <p>Accesul la sprijin psihologic trebuie discutat cu atenție, pornind de la drepturile, siguranța și nevoile adolescenților. Le cerem deputaților să analizeze argumentele și consecințele deciziei lor și să susțină soluții care îmbunătățesc accesul tinerilor la servicii de sănătate mintală.</p>
+    <p class="muted">Înainte de publicare, înlocuiește acest text cu poziția finală a campaniei și verifică situația legislativă actuală.</p>
+  </section>
+
+  <section>
+    <h2>Mesajul care va fi trimis</h2>
+    <p class="muted">Poți citi scrisoarea integrală înainte să alegi să o trimiți.</p>
+    <label for="senderName">Numele tău (opțional)</label>
+    <input id="senderName" type="text" autocomplete="name" placeholder="Numele și prenumele">
+    <label for="senderEmail">Adresa ta de email (opțional)</label>
+    <input id="senderEmail" type="email" autocomplete="email" placeholder="nume@exemplu.ro">
+    <label for="letter">Textul scrisorii</label>
+    <textarea id="letter">Stimate doamne deputat, stimați domni deputați,
+
+Vă scriu în legătură cu propunerea legislativă privind accesul la servicii psihologice începând cu vârsta de 16 ani.
+
+[INSEREAZĂ AICI ARGUMENTELE ȘI SOLICITAREA FINALĂ A CAMPANIEI.]
+
+Vă rog să luați în considerare drepturile și nevoile adolescenților și să susțineți măsuri care facilitează accesul lor la sprijin psihologic adecvat.
+
+Cu considerație,
+[NUME – se completează automat dacă este introdus mai sus]</textarea>
+    <label class="check"><input id="consent" type="checkbox"><span>Am citit mesajul de mai sus și sunt de acord să îl trimit deputaților selectați.</span></label>
+    <div class="notice" style="margin-top:14px">Pentru transparență: această pagină nu trimite emailuri în fundal și nu colectează sau stochează adresa ta. Butonul deschide aplicația de email de pe dispozitivul tău, iar tu verifici și apeși „Trimite”.</div>
+    <button class="primary" id="sendBtn">Deschide emailul pregătit</button>
+    <div class="actions">
+      <button class="secondary" id="gmailBtn">Deschide în Gmail</button>
+      <button class="secondary" id="copyBtn">Copiază scrisoarea</button>
+    </div>
+    <p id="status" class="muted" role="status" aria-live="polite"></p>
+  </section>
+  <section>
+    <h2>Destinatari</h2>
+    <p>Lista destinatarilor trebuie completată și verificată înainte de publicarea campaniei.</p>
+    <p class="muted"><strong>De completat:</strong> adresele oficiale ale deputaților vizați, subiectul final al emailului și orice instrucțiuni pentru gruparea destinatarilor.</p>
+  </section>
+  <footer>Inițiativă de advocacy · Sens Pozitiv<br>Acesta este un prototip. Verifică textul legislativ, destinatarii și politica de confidențialitate înainte de publicare.</footer>
+</main>
+<script>
+/* IMPORTANT: Replace the placeholder below with verified public email addresses.
+   Keep the list short enough for mailto links to work reliably in common email apps.
+   For a very large recipient list, create separate recipient groups/campaign buttons. */
+const RECIPIENTS = ["ADRESA_DE_EMAIL_A_DEPUTATILOR"];
+const SUBJECT = "Acces la servicii psihologice de la 16 ani";
+const $ = id => document.getElementById(id);
+function buildBody(){
+  const name = $("senderName").value.trim();
+  const email = $("senderEmail").value.trim();
+  let body = $("letter").value.trim();
+  body = body.replace("[NUME – se completează automat dacă este introdus mai sus]", name || "[Numele expeditorului]");
+  if (email) body += "\\n\\nAdresa mea de contact: " + email;
+  return body;
+}
+function ready(){
+  if (!$("consent").checked) { $("status").textContent = "Te rog să bifezi că ai citit și aprobi mesajul."; return false; }
+  if ($("letter").value.includes("[INSEREAZĂ AICI") || $("letter").value.includes("[ÎNLOCUIEȘTE")) {
+    $("status").textContent = "Scrisoarea conține încă un marcaj de completat. Campania trebuie finalizată de organizatori înainte de trimitere.";
+    return false;
+  }
+  if (RECIPIENTS.some(x => x.includes("ADRESA_DE_EMAIL"))) {
+    $("status").textContent = "Organizatorii trebuie să adauge și să verifice adresele oficiale ale destinatarilor înainte de publicare.";
+    return false;
+  }
+  return true;
+}
+function params(){return {to:RECIPIENTS.join(","),subject:SUBJECT,body:buildBody()};}
+function encode(p){return "mailto:"+encodeURIComponent(p.to).replace(/%2C/g,",")+"?subject="+encodeURIComponent(p.subject)+"&body="+encodeURIComponent(p.body);}
+$("sendBtn").addEventListener("click",()=>{if(!ready())return; location.href=encode(params());});
+$("gmailBtn").addEventListener("click",()=>{if(!ready())return;const p=params();const url="https://mail.google.com/mail/?view=cm&fs=1&to="+encodeURIComponent(p.to)+"&su="+encodeURIComponent(p.subject)+"&body="+encodeURIComponent(p.body);window.open(url,"_blank","noopener");});
+$("copyBtn").addEventListener("click",async()=>{if(!$("consent").checked){$("status").textContent="Te rog să bifezi că ai citit și aprobi mesajul.";return;}try{await navigator.clipboard.writeText("Către: "+RECIPIENTS.join(", ")+"\\nSubiect: "+SUBJECT+"\\n\\n"+buildBody());$("status").textContent="Scrisoarea a fost copiată. O poți lipi în aplicația ta de email.";}catch(e){$("status").textContent="Copierea automată nu este disponibilă în acest browser. Selectează și copiază textul scrisorii manual.";}});
+</script>
+</body>
+</html>
